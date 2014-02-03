@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pointcuts>
+    <pointcut>
+        <includeFile>TDProject/Core/Aspect/Authorization/Acl.php</includeFile>
+        <className>TDProject_Core_Aspect_Authorization_Acl</className>
+        <methodToIntercept>public.* TDProject_Webservice_Controller.*->.*Action(.*)</methodToIntercept>
+        <advice>around</advice>
+        <interceptWithMethod>forceAuthorization</interceptWithMethod>
+    </pointcut>
+</pointcuts>

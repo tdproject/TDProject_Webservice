@@ -1,0 +1,57 @@
+<?php
+/**
+ * TDProject_Webservice
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ */
+?>
+<h2>
+<?php echo $this->getPageHeadline(); ?></h2>
+<h5>
+<?php echo $this->getHeadline(); ?></h5>
+<form action="<?php echo $this->getUrl(); ?>"
+	method="get">
+	<input type="hidden" name="path" value="/webservice">
+	<input type="hidden" name="method" value="saveLogging">
+	<table>
+		<tr>
+			<th><label for="projectName">projectName: </label>
+			
+			<td><input name="projectName" id="projectName" type="text"
+				value="<?php echo $this->getProjectName(); ?>" disabled="disabled"></td>
+
+		</tr>
+		<tr>
+			<th><label for="taskName">taskName: </label>
+			
+			<td><input name="taskName" id="taskName" type="text"
+				value="<?php echo $this->getTaskName(); ?>" disabled="disabled"></td>
+		</tr>
+		<tr>
+			<th><label for="from">from: </label>
+			
+			<td><input name="from" id="from" type="text" value="<?php echo $this->getDateFrom(); ?>"></td>
+		</tr>
+		<tr>
+			<th><label for="until">until: </label>
+			
+			<td><input name="until" id="until" type="text" value="<?php echo $this->getDateUntil(); ?>"></td>
+		</tr>
+		<tr>
+			<th><label for="description">description: </label>
+		</tr>
+		<tr>
+			<td colspan="2"><textarea name="description" id="description" type="text"></textarea></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit"></td>
+		</tr>
+	</table>
+</form>
+
+

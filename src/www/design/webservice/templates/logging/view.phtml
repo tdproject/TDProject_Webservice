@@ -1,0 +1,46 @@
+<?php
+
+/**
+ * TDProject_Webservice
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ */
+
+?>
+<h2>
+<?php echo $this->getPageHeadline() ?></h2>
+<h5>
+<?php echo $this->getHeadline() ?></h5>
+
+<table>
+<tr>
+	<th>Id</th>
+	<th>project</th>
+	<th>task</th>
+	<th>from</th>
+	<th>until</th>
+	
+</tr>
+<?php
+$loggings = $this->getContext()->getAttribute('loggings');
+
+if (isset($loggings) && is_array($loggings)){
+	foreach ($loggings as $logging) {
+	?>
+	<tr>
+		<td style="border-width:2px; border-style:solid;"> <?php echo $logging->taskUserId; ?> </td>
+		<td style="border-width:2px; border-style:solid;"> <?php echo $logging->projectName; ?> </td>
+		<td style="border-width:2px; border-style:solid;"> <?php echo $logging->taskName; ?> </td>
+		<td style="border-width:2px; border-style:solid;"> <?php echo date("d.m.y H:i:s" , $logging->from); ?> </td>
+		<td style="border-width:2px; border-style:solid;"> <?php echo date("d.m.y H:i:s" , $logging->until); ?> </td>
+	</tr>
+	<?php 
+	}
+} 
+?>
+</table>
+<a href="<?php echo $this->getNewLoggingUrl(); ?>">create a new logging</a>

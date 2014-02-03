@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- /** * TDProject_Webservice * * NOTICE OF LICENSE * * This source file 
+	is subject to the Open Software License (OSL 3.0) * that is available through 
+	the world-wide-web at this URL: * http://opensource.org/licenses/osl-3.0.php 
+	*/ -->
+<processor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://www.techdivision.com/schema/session-1.0.0.xsd"
+	name="DomainProcessor" type="session" default-application="webservice"
+	deployment-descriptor="TDProject/META-INF/deployment-descriptor.xml">
+	<description>This class represents an object oriented way to manipulate
+		data in the database.</description>
+	<methods>
+	   <method name="getUserByUsername" type="abstract">
+            <description><![CDATA[This method returns all countries.]]></description>
+            <params>
+                <param name="username" type="TechDivision_Lang_String">
+                    <description><![CDATA[Holds the username of the user to be returned]]></description>
+                </param>
+            </params>
+            <return type="TDProject_Core_Common_ValueObjects_UserLightValue">
+                <description><![CDATA[The userLightValue of the user with the given username.]]></description>
+            </return>
+        </method>
+		<method name="getProjectOverviewDataByUserId" type="abstract">
+			<description><![CDATA[This method returns all countries.]]></description>
+			<params>
+				<param name="userId" type="TechDivision_Lang_Integer">
+					<description><![CDATA[Holds the ID of the user to load the data for]]></description>
+				</param>
+			</params>
+			<return type="TechDivision_Collections_ArrayList">
+				<description><![CDATA[Returns a ArrayList with all projects.]]></description>
+			</return>
+		</method>
+		<method name="getTaskOverviewDataByProjectId" type="abstract">
+			<description><![CDATA[This method returns all countries.]]></description>
+			<params>
+				<param name="projectId" type="TechDivision_Lang_Integer">
+					<description><![CDATA[Holds the ID of the project to load the taks for]]></description>
+				</param>
+			</params>
+			<return type="TechDivision_Collections_ArrayList">
+				<description><![CDATA[Returns a ArrayList with all tasks.]]></description>
+			</return>
+		</method>
+		<method name="getLoggingViewDataByUserId" type="abstract">
+			<description><![CDATA[This method returns all countries.]]></description>
+			<params>
+				<param name="projectId" type="TechDivision_Lang_Integer">
+					<description><![CDATA[Holds the ID of the project to load the taks for]]></description>
+				</param>
+			</params>
+			<return type="TDProject_Project_Common_ValueObjects_LoggingViewData">
+				<description><![CDATA[Returns a ArrayList with all tasks.]]></description>
+			</return>
+		</method>
+		<method name="getLoggingViewDataByTaskId" type="abstract">
+            <description><![CDATA[This method returns all countries.]]></description>
+            <params>
+                <param name="taskId" type="TechDivision_Lang_Integer">
+                    <description><![CDATA[Holds the ID of the project to load the taks for]]></description>
+                </param>
+            </params>
+            <return type="TDProject_Project_Common_ValueObjects_LoggingViewData">
+                <description><![CDATA[Returns a ArrayList with all tasks.]]></description>
+            </return>
+        </method>
+        <method name="saveTaskUser" type="abstract">
+            <description><![CDATA[This method saves the passed task-user relation.]]></description>
+            <params>
+                <param name="lvo" type="TDProject_Project_Common_ValueObjects_TaskUserLightValue">
+                    <description><![CDATA[Holds the LVO with the task-user relation data]]></description>
+                </param>
+            </params>
+            <return type="TechDivision_Lang_Integer">
+                <description><![CDATA[Returns the ID of the task-user relation.]]></description>
+            </return>
+        </method>
+        <method name="getAcl" type="abstract">
+            <description><![CDATA[This method loads and returns the ACL.]]></description>
+            <params/>
+            <return type="Zend_Acl">
+                <description><![CDATA[The initialized ACL.]]></description>
+            </return>
+        </method>
+        <method name="getGuestUser" type="abstract">
+            <description><![CDATA[This method loads and returns the guest user DTO.]]></description>
+            <params/>
+            <return type="TDProject_Core_Common_ValueObjects_UserLightValue">
+                <description><![CDATA[The initialized DTO.]]></description>
+            </return>
+        </method>
+        <method name="getSystemSettings" type="abstract">
+            <description><![CDATA[This method loads and returns the system settings LVO.]]></description>
+            <params/>
+            <return type="TDProject_Core_Common_ValueObjects_SettingLightValue">
+                <description><![CDATA[The initialized LVO.]]></description>
+            </return>
+        </method>
+	</methods>
+</processor>

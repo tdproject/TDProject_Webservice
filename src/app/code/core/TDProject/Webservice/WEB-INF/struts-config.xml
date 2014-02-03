@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * TDProject_Core
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ */
+-->
+<struts-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.techdivision.com/schema/struts-config-2.1.1.xsd">
+    <message-resources key="Webservice" name="Application" path="TDProject/Webservice/WEB-INF"/>
+    <form-beans/>    
+    <global-forwards/>
+    <action-mappings>
+        <action path="/webservice" name="" type="TDProject_Webservice_Controller_Index" scope="request" input="" parameter="method" validate="false" include="TDProject/Webservice/Controller/Index.php" unknown="false">
+            <forward name="Success" path="TDProject_Webservice_Block_Index" redirect="false"/>
+            <forward name="Failure" path="TDProject_Webservice_Block_Index" redirect="false"/>
+            <forward name="IndexView" path="TDProject_Webservice_Block_Index" redirect="false"/>
+            <forward name="ProjectView" path="TDProject_Webservice_Block_Project_View" redirect="false"/>
+            <forward name="TaskView" path="TDProject_Webservice_Block_Task_View" redirect="false"/>
+            <forward name="LoggingView" path="TDProject_Webservice_Block_Logging_View" redirect="false"/>
+            <forward name="CreateLoggingView" path="TDProject_Webservice_Block_CreateLogging_View" redirect="false"/>
+            <forward name="EditLoggingView" path="TDProject_Webservice_Block_EditLogging_View" redirect="false"/>
+        </action>
+         <action path="/api" name="" type="TDProject_Webservice_Controller_Api" scope="request" input="" parameter="method" validate="false" include="TDProject/Webservice/Controller/Api.php" unknown="false">
+            <forward name="Success" path="TDProject_Webservice_Block_Index" redirect="false"/>
+            <forward name="Failure" path="TDProject_Webservice_Block_Index" redirect="false"/>
+            <forward name="Wsdl" path="TDProject_Webservice_Block_Wsdl" redirect="false"/>
+            <forward name="SoapServer" path="TDProject_Webservice_Block_SoapServer" redirect="false"/>
+        </action>
+    </action-mappings>
+</struts-config>

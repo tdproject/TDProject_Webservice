@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- /** * TDProject_Core * * NOTICE OF LICENSE * * This source file is subject 
+	to the Open Software License (OSL 3.0) * that is available through the world-wide-web 
+	at this URL: * http://opensource.org/licenses/osl-3.0.php */ -->
+<resources>
+	<resource name="/webservice">
+		<methods>
+			<method name="__default">
+				<roles>
+					<role name="Administrator" />
+				</roles>
+			</method>
+			<method name="login">
+                <roles>
+                    <role name="Administrator" />
+                </roles>
+            </method>
+            <method name="getLogin">
+                <roles>
+                    <role name="Administrator" />
+                </roles>
+            </method>
+			<method name="loadProjects">
+				<roles>
+					<role name="Administrator" />
+				</roles>
+			</method>
+			<method name="loadTasks">
+				<roles>
+					<role name="Administrator" />
+				</roles>
+			</method>
+			<method name="loadLoggings">
+				<roles>
+					<role name="Administrator" />
+				</roles>
+			</method>
+			<method name="createLogging">
+                <roles>
+                    <role name="Administrator" />
+                </roles>
+            </method>
+            <method name="saveLogging">
+                <roles>
+                    <role name="Administrator" />
+                </roles>
+            </method>
+            <method name="editLogging">
+                <roles>
+                    <role name="Administrator" />
+                </roles>
+            </method>
+		</methods>
+	</resource>
+	<resource name="/api">
+        <methods>
+            <method name="__default">
+                <roles>
+                    <role name="Guest"/>
+                </roles>
+            </method>
+            <method name="wsdl">
+                <roles>
+                    <role name="Guest" />
+                </roles>
+            </method>
+            <method name="getProjects">
+                <roles>
+                    <role name="Guest" />
+                </roles>
+            </method>
+        </methods>
+    </resource>
+</resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+    <name>${ant.project.name}</name>
+    <channel>${pear.channel}</channel>
+    <summary>Webservices for the TDProject</summary>
+    <description>This project provide the webservices for TDProject.</description>
+    <lead>
+        <name>Tim Wagner</name>
+        <user>wagnert</user>
+        <email>tw@techdivision.com</email>
+        <active>yes</active>
+    </lead>
+    <date>${actual.date}</date>
+    <time>${actual.time}</time>
+    <version>
+        <release>${release.version}</release>
+        <api>${api.version}</api>
+    </version>
+    <stability>
+        <release>${release.stability}</release>
+        <api>${api.stability}</api>
+    </stability>
+    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+    <notes>- Project Cycle + Lazy Loading for Collections</notes>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.2.0</min>
+                <max>6.0</max>
+            </php>
+            <pearinstaller>
+                <min>1.6.2</min>
+            </pearinstaller>
+            <package>
+                <name>TDProject_Core</name>
+                <channel>project.tdintern.de/tdproject</channel>
+                <min>0.6.18</min>
+            </package>
+        </required>
+    </dependencies>
+    <phprelease/>
+    <changelog>
+		<release xmlns="">
+                    <version>
+                        <release>0.1.19</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2012-02-04</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Project Cycle + Lazy Loading for Collections
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.18</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2012-01-22</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Changing entity Package to ChannelPackage to avoid problems with PEAR installer
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.17</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2012-01-21</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Refactor install + update functionality
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.16</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2012-01-09</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Collection Cache
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.15</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-12-19</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Refactor container handling + Remove unnecessary loggers
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.14</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-12-02</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Minor Bugfixes
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.13</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-11-28</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Switch to new report package
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.12</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-11-12</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Bugfix Release
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.11</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-11-12</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Switch to new package structure
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.10</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-11-09</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Switch to new channel project.tdintern.de/tdproject
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.9</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-11-08</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Switch to new TDProject_Channel version
+                    </notes>
+                </release>
+<release xmlns="">
+                    <version>
+                        <release>0.1.8</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-10-20</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Bugfix Release
+                    </notes>
+                </release>
+<release>
+                    <version>
+                        <release>0.1.7</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-10-09</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Switching to new TechDivision_Model/Generator version
+                    </notes>
+                </release>
+<release>
+                    <version>
+                        <release>0.1.6</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-10-03</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Bugfix Release
+                    </notes>
+                </release>
+<release>
+                    <version>
+                        <release>0.1.5</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-10-03</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Bugfix Release
+                    </notes>
+                </release>
+<release>
+                    <version>
+                        <release>0.1.1</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2011-09-21</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        - Bugfix Release
+                    </notes>
+                </release>
+<release>
+			<version>
+				<release>0.1.0</release>
+				<api>0.1.0</api>
+			</version>
+			<stability>
+				<release>beta</release>
+				<api>beta</api>
+			</stability>
+			<date>2010-07-15</date>
+			<license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+			<notes>
+                - Initial release
+            </notes>
+		</release>
+    </changelog>
+</package>
