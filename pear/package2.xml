@@ -21,7 +21,7 @@
         <api>${api.stability}</api>
     </stability>
     <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
-    <notes>- Project Cycle + Lazy Loading for Collections</notes>
+    <notes>Change to new channel pear.appserver.io/tdproject</notes>
     <dependencies>
         <required>
             <php>
@@ -41,6 +41,21 @@
     <phprelease/>
     <changelog>
 		<release xmlns="">
+                    <version>
+                        <release>0.1.20</release>
+                        <api>0.1.0</api>
+                    </version>
+                    <stability>
+                        <release>beta</release>
+                        <api>beta</api>
+                    </stability>
+                    <date>2014-02-03</date>
+                    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GPL, version 2.0</license>
+                    <notes>
+                        Change to new channel pear.appserver.io/tdproject
+                    </notes>
+                </release>
+<release xmlns="">
                     <version>
                         <release>0.1.19</release>
                         <api>0.1.0</api>
